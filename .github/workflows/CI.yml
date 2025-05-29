@@ -23,7 +23,6 @@ jobs:
           image/cromwell_1024.bin
           xbe/xromwell.xbe
     - name: Create Release
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       uses: softprops/action-gh-release@v2.2.2
       with:
         files: |
